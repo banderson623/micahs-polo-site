@@ -1,8 +1,51 @@
 <html>
   <head>
-    <title>Micah Anderson / Water Polo / Utility / class of 2024</title>
+    <title>Micah Anderson / Water Polo / Utility / Class of 2024</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
-  <body>
-    <h1>Micah Anderson / Water Polo / Utility / class of 2024</h1>
+  <body class="bg-slate-300">
+    <div class="lg:max-w-5xl mt-4 mx-auto bg-gray-50 border-white border-8 shadow">
+
+      <div class="mb-12 flex lg:flex-row flex-col justify-around items-center">
+        <div class="px-4 py-2 lg:m-2 rounded-sm font-headline">
+          <h1 class="text-5xl lg:text-7xl font-black inline-block">Micah</h1>
+          <h1 class="text-5xl font-black inline-block">Anderson</h1> 
+          <h2 class="text-xl">Water Polo / Utility / Class of 2024</h2>
+        </div>
+    
+        <div style="height: 28rem; background-image: url('./assets/smile.jpeg'); background-size: cover; background-position: 15% 15%;" 
+            class="lg:mt-2 w-3/4 bg-gray-200 lg:-mr-8 rounded-sm shadow-xl lg:rotate-1 border-8 border-white">
+        </div>
+      </div>
+
+      <div class="m-12 typography max-w-3xl mx-auto">
+        <p>Hey thanks for taking a few moments to read more about me. I know your time is precious, so I'll get right to it. I want to play water polo in college as your next utility player.</p>
+        <p>But this hasn't always been true, and this might not be the most interesting thing about me.</p>  
+        <p>I grew up in a small town in Iowa, just outside of the university town of Ames, Iowa. Our school district didn't have a pool, so instead we played a lot of soccer. One of my teammates' dad was a well known swim coach and invited me out to swim for his club. I instantly fell in love with being in the water and being a part of the swim community.</p> 
+        <p>In 2019 we moved to Rocklin, California and I joined a swim club, made the 8th grade basketball and volleyball team. Then covid happened, and the world shut down. It was difficult being in a new school and new town without the time to establish great friendships.</p>
+      </div>
+
+      <div>
+        <video class="w-max -mx-12 border-8 border-white shadow-2xl -rotate-1" playsinline autoplay loop>
+          <source src="./assets/micahs-goal-wide.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
   </body>
+
+  <script>
+    if(window.location.href.includes('localhost')) {
+      const reload = () => window.location.href = window.location.href;
+      
+      document.body.addEventListener('click', reload)
+      // setTimeout(reload, 2000);
+    }
+
+    Array.from(document.querySelectorAll('.typography p')).forEach(function(p) {
+      p.classList.add('mt-2', 'mb-4', 'px-4', 'text-lg')
+    });
+  </script>
 </html>
